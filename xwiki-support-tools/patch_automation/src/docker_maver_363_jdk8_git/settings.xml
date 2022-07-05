@@ -1,0 +1,169 @@
+<settings>
+ <profiles>
+   <profile>
+     <id>xwiki</id>
+     <properties>
+     </properties>
+     <repositories>
+       <repository>
+         <id>xwiki-snapshots</id>
+         <name>XWiki Nexus Snapshot Repository Proxy</name>
+         <url>http://nexus.xwiki.org/nexus/content/groups/public-snapshots</url>
+         <releases>
+           <enabled>false</enabled>
+         </releases>
+         <snapshots>
+           <enabled>true</enabled>
+         </snapshots>
+       </repository>
+       <repository>
+         <id>xwiki-releases</id>
+         <name>XWiki Nexus Releases Repository Proxy</name>
+         <url>http://nexus.xwiki.org/nexus/content/groups/public</url>
+         <releases>
+           <enabled>true</enabled>
+         </releases>
+         <snapshots>
+           <enabled>false</enabled>
+         </snapshots>
+       </repository>
+     </repositories>
+     <pluginRepositories>
+       <pluginRepository>
+         <id>xwiki-plugins-snapshots</id>
+         <name>XWiki Nexus Plugin Snapshot Repository Proxy</name>
+         <url>http://nexus.xwiki.org/nexus/content/groups/public-snapshots</url>
+         <releases>
+           <enabled>false</enabled>
+         </releases>
+         <snapshots>
+           <enabled>true</enabled>
+         </snapshots>
+       </pluginRepository>
+       <pluginRepository>
+         <id>xwiki-plugins-releases</id>
+         <name>XWiki Nexus Plugin Releases Repository Proxy</name>
+         <url>http://nexus.xwiki.org/nexus/content/groups/public</url>
+         <releases>
+           <enabled>true</enabled>
+         </releases>
+         <snapshots>
+           <enabled>false</enabled>
+         </snapshots>
+       </pluginRepository>
+     </pluginRepositories>
+   </profile>
+   <profile>
+   <id>xwikisas</id>
+   <repositories>
+     <repository>
+       <id>maven.xwikisas.com-http-externals</id>
+       <name>XWiki SAS Maven2 Remote Repository for Third Party Dependencies</name>
+       <url>http://maven.xwikisas.com/externals</url>
+       <releases>
+         <enabled>true</enabled>
+       </releases>
+       <snapshots>
+         <enabled>false</enabled>
+       </snapshots>
+     </repository>
+     <repository>
+       <id>maven.xwikisas.com-http-releases</id>
+       <name>XWiki SAS Maven2 Remote Repository for Releases</name>
+       <url>http://maven.xwikisas.com/releases</url>
+       <releases>
+         <enabled>true</enabled>
+       </releases>
+       <snapshots>
+         <enabled>false</enabled>
+       </snapshots>
+     </repository>
+     <repository>
+       <id>maven.xwikisas.com-http-snapshots</id>
+       <name>XWiki SAS Maven2 Remote Repository for Snapshots</name>
+       <url>http://maven.xwikisas.com/snapshots</url>
+       <releases>
+         <enabled>false</enabled>
+       </releases>
+       <snapshots>
+         <enabled>true</enabled>
+       </snapshots>
+     </repository>
+   </repositories>
+   <pluginRepositories>
+     <pluginRepository>
+       <id>xwikisas-plugins-externals</id>
+       <name>XWiki SAS Maven2 Plugin Remote Repository for Third Party Plugins</name>
+       <url>http://maven.xwikisas.com/externals</url>
+       <releases>
+         <enabled>true</enabled>
+       </releases>
+       <snapshots>
+         <enabled>true</enabled>
+       </snapshots>
+     </pluginRepository>
+     <pluginRepository>
+       <id>xwikisas-plugins-releases</id>
+       <name>XWiki SAS Maven2 Plugin Remote Repository for Releases</name>
+       <url>http://maven.xwikisas.com/releases</url>
+       <releases>
+         <enabled>true</enabled>
+       </releases>
+       <snapshots>
+         <enabled>false</enabled>
+       </snapshots>
+     </pluginRepository>
+     <pluginRepository>
+       <id>xwikisas-plugins-snapshots</id>
+       <name>XWiki SAS Maven2 Plugin Remote Repository for Snapshots</name>
+       <url>http://maven.xwikisas.com/snapshots</url>
+       <releases>
+         <enabled>false</enabled>
+       </releases>
+       <snapshots>
+         <enabled>true</enabled>
+       </snapshots>
+     </pluginRepository>
+   </pluginRepositories>
+ </profile>
+ </profiles>
+ <activeProfiles>
+   <activeProfile>xwiki</activeProfile>
+   <activeProfile>xwikisas</activeProfile>
+ </activeProfiles>
+ <servers>
+<server>
+   <id>maven.xwikisas.com-http-snapshots</id>
+   <configuration>
+     <httpHeaders>
+       <property>
+         <name>Authorization</name>
+         <value>Basic eHdpa2k6eHdzYXNjaQ==</value>
+       </property>
+     </httpHeaders>
+   </configuration>
+ </server>
+ <server>
+   <id>maven.xwikisas.com-http-releases</id>
+   <configuration>
+     <httpHeaders>
+       <property>
+         <name>Authorization</name>
+         <value>Basic eHdpa2k6eHdzYXNjaQ==</value>
+       </property>
+     </httpHeaders>
+   </configuration>
+ </server>
+ <server>
+   <id>maven.xwikisas.com-http-externals</id>
+   <configuration>
+     <httpHeaders>
+       <property>
+         <name>Authorization</name>
+         <value>Basic eHdpa2k6eHdzYXNjaQ==</value>
+       </property>
+     </httpHeaders>
+   </configuration>
+ </server>
+ </servers>
+</settings>
